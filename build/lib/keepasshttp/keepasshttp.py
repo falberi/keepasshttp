@@ -72,7 +72,6 @@ class KeePassHTTP:
             'Key': self.key
             }
         response = self.post( payload )
-        print response
         return response['Success']
 
     def test_associate( self ):

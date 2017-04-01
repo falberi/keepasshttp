@@ -8,7 +8,7 @@ class BasicTestSuite(unittest.TestCase):
     """Basic test cases."""
 
     def setUp(self):
-        self.store = sample.KeePassHTTP("test_passphrase", 'test')
+        self.store = keepasshttp.KeePassHTTP("test_passphrase", 'test')
 
     def test_associate_ok(self):
         r = self.store.test_associate()
